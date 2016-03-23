@@ -30,6 +30,7 @@
         sure that this code comes from a book</string>
     <string name="connection_error">Connection not available. Make sure you have a working internet connection</string>
     <string name="fetchingbook">Retrieving book. Please wait</string>
+	<string name="noauthor">Author unknown</string>
 
     <string name="ok_button">Next</string>
     <string name="cancel_button">Cancel</string>
