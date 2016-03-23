@@ -23,6 +23,8 @@
     <string name="about">About</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="empty_fixtures">No fixtures this day</string>
+	<string name="noauthor">Uknown Author</string>
+	<string name="sharematchinfo">Share this match info with others.</string>
     <string name="about_text">
         This Application get Football Matches Score for the Premier League,Seria A,Bundesliga,Primera Division
         and the Uefa Champions League.
