@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-		android:content_description="@string/sharematchinfo"
+		android:contentDescription="@string/sharematchinfo"
         android:gravity="center"
         android:text="@string/share_text"
         android:id="@+id/share_button"

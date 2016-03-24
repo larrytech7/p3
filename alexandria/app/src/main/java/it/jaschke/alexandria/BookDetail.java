@@ -41,7 +41,6 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         setHasOptionsMenu(true);
     }
 
-
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -68,12 +67,17 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.book_detail, menu);
-
         MenuItem menuItem = menu.findItem(R.id.action_share);
         shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
-        getLoaderManager().restartLoader(LOADER_ID, null, this);
     }
 
+	@Override
+	public void onResume(){
+		super.onResume();
+		//called here to make sure that the shareActionProvider is initialised and ready to process the action when called
+		getLoaderManager().restartLoader(LOADER_ID, null, this);
+	}
+	
     @Override
     public android.support.v4.content.Loader<Cursor> onCreateLoader(int id, Bundle args) {
         return new CursorLoader(
