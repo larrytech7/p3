@@ -216,7 +216,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
         if(authors == null){
             authors = getActivity().getString(R.string.noauthor);
         }
-        String[] authorsArr authors.split(",");
+        String[] authorsArr = authors.split(",");
 
         ((TextView) rootView.findViewById(R.id.authors)).setLines(authorsArr.length);
         ((TextView) rootView.findViewById(R.id.authors)).setText(authors.replace(",","\n"));
